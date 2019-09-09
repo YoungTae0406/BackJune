@@ -2,11 +2,11 @@ package BJ_07;
 import java.util.Scanner;
 
 public class BJ_07 { 
-	public static void main(String[] args) {
+	public static void main(String[] args) { //https://www.acmicpc.net/problem/9613
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();
 		int[] ary = new int[100];
-		int gcdsum=0;
+		long gcdsum=0;
 		for(int i=0;i<t;i++) {
 			gcdsum=0;
 			int n = sc.nextInt();
@@ -19,9 +19,7 @@ public class BJ_07 {
 				}
 			}
 			System.out.println(gcdsum);
-		}
-		
-		
+		}	
 	}
 	public static int GCD(int a, int b) {
 		int temp;
